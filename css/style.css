@@ -9,6 +9,8 @@
 .container {
   display: flex;
   justify-content: space-around;
+  width: 1200px;
+  margin-left: 500px;
 }
 
 a {
@@ -55,4 +57,47 @@ a {
 }
 
 .header-nav-left a {
+}
+
+/* prime 3 foto*/
+
+#products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin-top: 50px;
+  width: calc(100% / 3 - 50px);
+  min-width: 200px;
+  text-align: center;
+  background-size: cover;
+  padding: 5px;
+  /* debug
+  background-color: red;*/
+}
+.card img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.card .heart {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  z-index: 1;
+}
+.heart {
+  background-color: white;
+  font-size: xx-large;
+  padding: 3px;
+  margin-right: -30px;
+  width: 60px;
+}
+
+.card:hover .img {
+  content: url(../img/1b.webp);
 }
