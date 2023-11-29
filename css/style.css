@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-/*Utils */
+/*UTILS */
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -17,21 +18,6 @@ a {
   text-decoration: none;
   color: white;
   padding: 20px;
-}
-
-/* header */
-
-.header {
-  width: 100%;
-  background-color: #ff6900;
-  min-height: 80px;
-}
-.logo {
-  vertical-align: middle;
-  width: 200px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .header-nav-right ul {
@@ -56,10 +42,28 @@ a {
   vertical-align: middle;
 }
 
-.header-nav-left a {
+/* header */
+
+.header {
+  width: 100%;
+  background-color: #ff6900;
+  min-height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  vertical-align: middle;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* prime 3 foto*/
+/*.header-nav-left a {
+}*/
+
+/* foto */
 
 #products {
   display: flex;
@@ -84,6 +88,27 @@ a {
   display: block;
   width: 100%;
 }
+/* img-none inizio*/
+.card .img-none {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
+#card-none {
+}
+#card-none:hover .img {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
+#card-none:hover .img-none {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+/* img-none fine*/
+
+/*ETICHETTE*/
 
 .card .heart {
   position: absolute;
@@ -122,4 +147,34 @@ a {
   position: absolute;
   left: 45px;
   bottom: 70px;
+}
+
+/* FINE ETICHETTE*/
+
+/*FOOTER*/
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.114);
+  min-height: 80px;
+}
+
+.footer-nav-right ul {
+  list-style-type: none;
+  color: white;
+}
+.footer-nav-left ul {
+  list-style-type: none;
+  color: white;
+}
+
+.footer-nav-left li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-nav-right li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
