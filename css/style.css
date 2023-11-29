@@ -51,6 +51,8 @@ a {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
+  align-items: center;
 }
 .logo {
   vertical-align: middle;
@@ -76,6 +78,7 @@ a {
   margin-top: 50px;
   width: calc(100% / 3 - 50px);
   min-width: 200px;
+  height: 100%;
   text-align: center;
   background-size: cover;
   padding: 5px;
@@ -94,18 +97,15 @@ a {
   margin: 0 auto;
   width: 100%;
 }
-#card-none {
-}
-#card-none:hover .img {
-  display: none;
-  margin: 0 auto;
-  width: 100%;
-}
-#card-none:hover .img-none {
+
+.card:hover .img-none {
   display: block;
-  margin: 0 auto;
-  width: 100%;
 }
+
+.card:hover img {
+  display: none;
+}
+
 /* img-none fine*/
 
 /*ETICHETTE*/
@@ -154,27 +154,28 @@ a {
 /*FOOTER*/
 .footer {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.114);
+  background-color: rgba(0, 0, 0, 0.74);
   min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-left p ul {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
 }
 
 .footer-nav-right ul {
-  list-style-type: none;
-  color: white;
-}
-.footer-nav-left ul {
-  list-style-type: none;
   color: white;
 }
 
 .footer-nav-left li {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+  list-style-type: none;
+  align-items: start;
 }
 
 .footer-nav-right li {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+  list-style-type: none;
 }
