@@ -11,13 +11,14 @@
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  margin-left: 300px;
  
 }
 
 a {
   text-decoration: none;
   color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 .header-nav-right ul {
@@ -35,11 +36,13 @@ a {
 .header-nav-right li {
   display: inline-block;
   vertical-align: middle;
+  padding: 20px;
 }
 .header-nav-left li {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  padding: 20px;
 }
 
 /* header */
@@ -122,6 +125,9 @@ a {
   padding: 3px;
   margin-right: -30px;
   width: 60px;
+}
+.heart:hover{
+  color: red;
 }
 
 .sale {
